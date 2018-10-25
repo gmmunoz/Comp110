@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Group fx:id="_group" onMouseClicked="#handleClick" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+         <children>
+            <ImageView fitHeight="327.0" fitWidth="571.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@allen.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Slider fx:id="_size" blockIncrement="1.0" layoutX="82.0" layoutY="348.0" majorTickUnit="0.1" max="5.0" onMouseDragged="#changeSize" prefHeight="38.0" prefWidth="479.0" showTickLabels="true" showTickMarks="true" AnchorPane.rightAnchor="16.0" />
+      <Label layoutX="16.0" layoutY="348.0" text="Tear Size" />
+      <Label alignment="TOP_LEFT" layoutX="46.0" layoutY="27.0" text="Paint" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="46.0" layoutY="63.0" text="the" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="45.0" layoutY="99.0" text="Tears" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
