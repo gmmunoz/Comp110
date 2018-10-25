@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="_text" layoutX="14.0" layoutY="83.0" prefHeight="106.0" prefWidth="188.0" wrapText="true" />
+      <ListView fx:id="_misspelled" layoutX="215.0" layoutY="83.0" prefHeight="106.0" prefWidth="124.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Spell Check Demo">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="202.0" mnemonicParsing="false" onAction="#linearSearch" text="Linear Search Spell Check">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onAction="#binarySearch" text="Binary Search Spell Check">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="62.0" text="Enter text here:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="62.0" text="Words:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="201.0" text="Steps:">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="_steps" alignment="CENTER" layoutX="217.0" layoutY="223.0" prefHeight="17.0" prefWidth="124.0" text="?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
